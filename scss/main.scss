@@ -77,6 +77,22 @@ header nav {
 
 /* ----------- CONTENT ------------ */
 /* Slider and Baner */
+.slider, .baner {
+  img {
+    -webkit-filter: brightness(68%);
+    filter: brightness(68%);
+    object-fit: cover;
+
+    @media(min-width: 1900px){
+      width: 100%;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: 40%;
+  }
+}
+/* Slider */
 .slider {
   position: relative;
   background-size: cover;
@@ -94,26 +110,94 @@ header nav {
     }
   }
 }
-.slider, .baner {
-  img {
-    -webkit-filter: brightness(68%);
-    filter: brightness(68%);
-    object-fit: cover;
-
-    @media(min-width: 1900px){
-      width: 100%;
-    }
-  }
-  h1 {
-    position: absolute;
-    top: 40%;
-  }
-}
+/* Baner */
 .baner {
   position: relative;
   height: 60vh;
   overflow: hidden;
 }
+
+
+/* Blog and Gallery */
+.box-blog, .gallery {
+  margin: 0;
+
+  > div {
+    padding: 0;
+    overflow: hidden;
+    max-height: 350px;
+
+    img {
+      object-fit: cover;
+      filter: brightness(70%);
+      -webkit-transition-property: filter;
+      -webkit-transition-duration: 0.3s;
+      transition-property: filter;
+      transition-duration: 0.3s;
+
+      @media(min-width: 1900px){
+        width: 100%;
+      }
+    }
+    &:hover img {
+      filter: brightness(85%);
+    }
+  }
+}
+/* Blog */
+.box-blog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #e1e1e1;
+
+  &:nth-child(even){
+    > div:first-child {
+      order: 2;
+    }
+    > div:nth-child(2) {
+      order: 1;
+    }
+  }
+
+  @media(max-width: 767px){
+    flex-direction: column;
+
+    &:nth-child(even){
+      > div:first-child {
+        order: 1;
+      }
+      > div:nth-child(2) {
+        order: 2;
+      }
+    }
+  }
+
+  > div {
+    img {
+      width: 100%;
+    }
+    &:nth-child(2) {
+      padding: 2rem;
+    }
+  }
+}
+/* Gallery */
+.gallery > div  {
+  img {
+    height: 100%;
+  }
+  h3 {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 
 
 /* ----------- FOOTER ------------ */
