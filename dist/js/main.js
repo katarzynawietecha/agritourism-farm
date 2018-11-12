@@ -27,8 +27,8 @@ $(document).ready(function() {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 1000,
+    speed: 1500,
+    autoplaySpeed: 2200,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [

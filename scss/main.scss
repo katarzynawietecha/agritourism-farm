@@ -198,6 +198,28 @@ header nav {
 }
 
 
+/* Carousel */
+#carousel {
+  .slick-slide {
+    height: 250px;
+
+    > div > div {
+      position: relative;
+      overflow: hidden;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.slick-dots {
+  display: none !important;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 
 
 /* ----------- FOOTER ------------ */
