@@ -1,0 +1,132 @@
+@import "reset";
+@import "variables";
+
+
+/* ----------- GENERAL ------------ */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+h4 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+p, a:not(nav a){
+  padding-bottom: 30px;
+}
+.secondary-background {
+  background-color: #e1e1e1;
+}
+
+
+/* ----------- NAVIGATION ------------ */
+header nav {
+  background-color: rgba(0,0,0,.38);
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+
+  @media (max-width: 575px){
+    background-color: rgba(0,0,0,.85);
+  }
+  ul {
+    list-style-type: none;
+
+    .media-item {
+      svg {
+        path:first-child {
+          opacity: 0;
+        }
+        &:hover path:first-child {
+          opacity: 1;
+        }
+      }
+      @media(min-width: 767px){
+        margin-left: 50px;
+        padding-top: 0;
+      }
+    }
+    a {
+      color: #fff;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.sticky {
+  nav {
+    background-color: rgba(0,0,0,.85);
+  }
+}
+
+
+/* ----------- CONTENT ------------ */
+/* Slider and Baner */
+.slider {
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+
+  .carousel {
+    height: 100%;
+
+    .carousel-inner {
+      .carousel-item  {
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.slider, .baner {
+  img {
+    -webkit-filter: brightness(68%);
+    filter: brightness(68%);
+    object-fit: cover;
+
+    @media(min-width: 1900px){
+      width: 100%;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: 40%;
+  }
+}
+.baner {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+
+/* ----------- FOOTER ------------ */
+footer {
+  .footer__top {
+    h4 {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      font-weight: bold;
+      padding-top: 15px;
+    }
+    ul {
+      list-style-type: none;
+    }
+  }
+}
