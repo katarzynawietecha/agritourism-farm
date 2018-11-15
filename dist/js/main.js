@@ -58,6 +58,18 @@ $(document).ready(function() {
     ]
   });
 
+  (function() {
+      var nav = document.getElementById('navbarsExampleDefault');
+      var anchor = nav.getElementsByTagName('a');
+      var current = window.location.pathname.split('/')[1];
+
+      for (var i = 0; i < anchor.length; i++){
+          if(current ^= anchor[i].href){
+              anchor[i].className = "active";
+          }
+      }
+  })();
+
 
   // Touch slider on mobile
   $("#slide-carousel").swiperight(function() {
