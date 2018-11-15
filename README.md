@@ -7,7 +7,7 @@ Multi-page website with sliders, gallery and some animations. Made with several 
 
 **License**
 
- Quiz is released under the MIT License.
+This project is released under the MIT License.
 
 
 **Demo**
