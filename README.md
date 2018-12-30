@@ -2,7 +2,7 @@
 
 **Basic informations**
 
-Multi-page website with sliders, gallery and some animations. Made with several css and javascript liraries.
+Multi-page website with sliders, gallery and some animations. Made with CSS and JavaScript libraries.
 
 
 **License**

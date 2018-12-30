@@ -12,6 +12,9 @@
   <!-- fancyBox CSS -->
   <link rel="stylesheet" type="text/css" href="dist/fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Custom css -->
   <link rel="stylesheet" href="dist/css/main.css">
 
@@ -31,11 +34,11 @@
 
   <section class="pt-5 pb-5">
     <div class="container">
-      <h2>Blog</h2>
-      <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis id dui ut sagittis. Donec at metus id orci congue commodo sit amet ut diam. Donec id tellus ligula. Aliquam elementum consectetur volutpat. Lorem ipsum dolor sit amet.</p>
+      <h2 data-aos="fade-up" >Aktualności</h2>
+      <p data-aos="fade-up" class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis id dui ut sagittis. Donec at metus id orci congue commodo sit amet ut diam. Donec id tellus ligula. Aliquam elementum consectetur volutpat. Lorem ipsum dolor sit amet.</p>
 
       <!-- Box-blog -->
-      <div class="box-blog row mb-3">
+      <div data-aos="fade-up" class="box-blog row mb-3">
         <div class="col-xs-12 col-md-6">
           <a href="#">
             <img src="dist/images/blog/currants-3585286_960_720.jpg" alt="kiść porzeczek">
@@ -49,7 +52,7 @@
       </div>
       <!-- END Box-blog -->
       <!-- Box-blog -->
-      <div class="box-blog row mb-3">
+      <div data-aos="fade-up" class="box-blog row mb-3">
         <div class="col-xs-12 col-md-6">
           <a href="#">
             <img src="dist/images/blog/pumpkin-3759587_960_720.jpg" alt="dynie">
@@ -63,7 +66,7 @@
       </div>
       <!-- END Box-blog -->
       <!-- Box-blog -->
-      <div class="box-blog row mb-3">
+      <div data-aos="fade-up" class="box-blog row mb-3">
         <div class="col-xs-12 col-md-6">
           <a href="#">
             <img src="dist/images/blog/sunflower-3550693_960_720.jpg" alt="słoneczniki">
@@ -76,7 +79,8 @@
         </div>
       </div>
       <!-- END Box-blog -->
-      <div class="box-blog row mb-3">
+      <!-- Box-blog -->
+      <div data-aos="fade-up" class="box-blog row mb-3">
         <div class="col-xs-12 col-md-6">
           <a href="#">
             <img src="dist/images/blog/orchard-1872997_960_720.jpg" alt="sad">
@@ -130,8 +134,15 @@
   </script>
   <script type="text/javascript" src="dist/fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+     duration: 1200,
+  });
+  </script>
+
   <!-- Custom js -->
   <script src="dist/js/main.js"></script>
-
 
 </body>

@@ -14,15 +14,27 @@ body {
 h1 {
   font-size: 4rem;
   color: #fff;
+
+  @media (max-width: 768px){
+    font-size: 2rem;
+  }
 }
 h2 {
   font-size: 3rem;
   margin-bottom: 30px;
   position: relative;
+
+  @media (max-width: 768px){
+    font-size: 1.8rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
   margin-bottom: 30px;
+
+  @media (max-width: 768px){
+    font-size: 1.5rem;
+  }
 }
 p, a:not(nav a){
   padding-bottom: 30px;
@@ -79,8 +91,8 @@ header nav {
 /* Slider and Baner */
 .slider, .baner {
   img {
-    -webkit-filter: brightness(68%);
-    filter: brightness(68%);
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
     object-fit: cover;
 
     @media(min-width: 1900px){
@@ -129,7 +141,7 @@ header nav {
 
     img {
       object-fit: cover;
-      filter: brightness(70%);
+      filter: brightness(90%);
       -webkit-transition-property: filter;
       -webkit-transition-duration: 0.3s;
       transition-property: filter;
@@ -140,7 +152,7 @@ header nav {
       }
     }
     &:hover img {
-      filter: brightness(85%);
+      filter: brightness(100%);
     }
   }
 }
