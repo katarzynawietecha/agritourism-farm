@@ -18,6 +18,9 @@ h1 {
   @media (max-width: 768px){
     font-size: 2rem;
   }
+  @media (max-width: 320px){
+    font-size: 1.5rem;
+  }
 }
 h2 {
   font-size: 3rem;
@@ -27,13 +30,29 @@ h2 {
   @media (max-width: 768px){
     font-size: 1.8rem;
   }
+  @media (max-width: 320px){
+    font-size: 1.4rem;
+  }
+}
+h3 {
+  font-size: 2rem;
+
+  @media (max-width: 768px){
+    font-size: 1.6rem;
+  }
+  @media (max-width: 320px){
+    font-size: 1.3rem;
+  }
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 30px;
 
   @media (max-width: 768px){
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  @media (max-width: 320px){
+    font-size: 1rem;
   }
 }
 p, a:not(nav a){
@@ -102,6 +121,7 @@ header nav {
   h1 {
     position: absolute;
     top: 40%;
+    text-shadow: 0 0 10px #1e1919;
   }
 }
 /* Slider */
